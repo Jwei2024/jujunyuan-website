@@ -1,431 +1,1092 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>湖北悦澄农业有限公司 - 专业农产品供应链服务商</title>
-  <meta name="description" content="湖北悦澄农业有限公司专注全蛋粉、蛋白粉、蛋黄粉贸易，近半年每月数百吨规模，先进蛋粉生产工艺与现代化车间。"/>
-  <style>
-    :root {
-      --primary: #2563eb;
-      --primary-dark: #1d4ed8;
-      --accent: #3b82f6;
-      --text: #1e3a5f;
-      --light: #f0f7ff;
-      --bg-card: #e6f0ff;
-    }
-    body { margin:0; font-family:"Microsoft YaHei",Arial,sans-serif; color:var(--text); background:var(--light); line-height:1.6; }
-    header { background:linear-gradient(to right,var(--primary),var(--primary-dark)); color:white; text-align:center; padding:120px 20px 80px; position:relative; overflow:hidden; }
-    header img { position:absolute; top:0; left:0; right:0; bottom:0; width:100%; height:100%; object-fit:cover; opacity:0.3; z-index:0; }
-    header .content { position:relative; z-index:1; }
-    header h1 { margin:0; font-size:3.5rem; text-shadow:2px 2px 8px rgba(0,0,0,0.4); }
-    header p { font-size:1.5rem; margin:20px 0 0; opacity:0.95; }
-    nav { background:white; box-shadow:0 4px 12px rgba(0,0,0,0.1); position:sticky; top:0; z-index:100; }
-    nav ul { margin:0; padding:0; list-style:none; display:flex; justify-content:center; }
-    nav li a { display:block; padding:20px 40px; color:var(--primary-dark); text-decoration:none; font-weight:bold; transition:all 0.3s; }
-    nav li a:hover { color:white; background:var(--primary); }
-    section { padding:80px 20px; max-width:1200px; margin:0 auto; }
-    .about, .products, .process, .strength { background:var(--bg-card); border-radius:16px; box-shadow:0 6px 24px rgba(37,99,235,0.15); padding:48px 40px; margin-bottom:60px; border:1px solid #bfdbfe; }
-    h2 { color:var(--primary-dark); text-align:center; font-size:2.6rem; margin-bottom:48px; position:relative; }
-    h2::after { content:""; width:100px; height:5px; background:var(--accent); position:absolute; bottom:-16px; left:50%; transform:translateX(-50%); border-radius:3px; }
-    .product-grid, .strength-grid, .workshop-grid { display:grid; grid-template-columns:repeat(4, 1fr); gap:24px; }
-    .product-grid .card, .strength-grid .card, .workshop-grid .card { min-height:380px; display:flex; flex-direction:column; }
-    .product-grid .card img, .strength-grid .card img, .workshop-grid .card img { height:200px; object-fit:cover; }
-    .product-grid .card p, .strength-grid .card p, .workshop-grid .card p { flex-grow:1; }
-    @media (max-width:1200px) { .product-grid, .strength-grid, .workshop-grid { grid-template-columns:repeat(2, 1fr); } }
-    @media (max-width:768px) { .product-grid, .strength-grid, .workshop-grid { grid-template-columns:1fr; } }
-    .card { background:white; padding:28px; border-radius:12px; text-align:center; border:1px solid #bfdbfe; transition:all 0.3s; box-shadow:0 4px 12px rgba(0,0,0,0.08); }
-    .card:hover { transform:translateY(-10px); box-shadow:0 12px 30px rgba(37,99,235,0.2); }
-    .card img { width:100%; height:auto; border-radius:8px; margin-bottom:16px; }
-    .card h3 { color:var(--primary-dark); margin-bottom:12px; font-size:1.3rem; }
-    .process-steps { max-width:900px; margin:0 auto 40px; font-size:1.2rem; }
-    .process-steps ol { padding-left:30px; }
-    .process-steps li { margin-bottom:16px; }
-    .flowchart img { width:100%; max-width:900px; height:auto; display:block; margin:0 auto 32px; border-radius:12px; box-shadow:0 4px 16px rgba(0,0,0,0.1); border:1px solid #93c5fd; }
-    .banks { display:flex; flex-wrap:wrap; gap:20px; justify-content:center; margin:48px 0; }
-    .bank-logo { font-size:1.1rem; padding:12px 28px; background:#dbeafe; border-radius:50px; color:var(--primary-dark); font-weight:bold; border:1px solid #93c5fd; }
-    .modal { display:none; position:fixed; z-index:1000; left:0; top:0; width:100%; height:100%; background:rgba(0,0,0,0.9); justify-content:center; align-items:center; }
-    .modal img { max-width:90%; max-height:90%; border-radius:8px; box-shadow:0 20px 60px rgba(0,0,0,0.5); }
-    .modal-close { position:absolute; top:20px; right:40px; color:white; font-size:40px; cursor:pointer; }
-    footer { background:var(--primary-dark); color:white; text-align:center; padding:80px 20px 40px; }
-    .contact-info p { font-size:1.3rem; margin:16px 0; }
-    @media (max-width:768px) { header h1{font-size:2.6rem;} nav ul{flex-direction:column;} nav li a{padding:16px 24px;} }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>湖北聚俊缘科技有限公司 - 农业产业化龙头企业</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+        
+        /* 导航栏 - 参考米来生物白色风格 */
+        .navbar {
+            background: rgba(255, 255, 255, 0.98);
+            padding: 1rem 0;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid rgba(0,0,0,0.05);
+        }
+        
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 0.8rem;
+            color: #1a5f2a;
+        }
+
+        .logo-text {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .logo-main {
+            font-size: 1.3rem;
+            font-weight: bold;
+            letter-spacing: 0.05em;
+            color: #1a5f2a;
+        }
+
+        .logo-sub {
+            font-size: 0.75rem;
+            color: #666;
+            font-weight: 400;
+        }
+        
+        .nav-links {
+            display: flex;
+            gap: 2.5rem;
+            list-style: none;
+        }
+        
+        .nav-links a {
+            color: #333;
+            text-decoration: none;
+            font-size: 0.95rem;
+            transition: all 0.3s;
+            position: relative;
+            font-weight: 500;
+        }
+
+        .nav-links a:hover {
+            color: #1a5f2a;
+        }
+
+        .nav-links a::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: #1a5f2a;
+            transition: width 0.3s;
+        }
+        
+        .nav-links a:hover::after {
+            width: 100%;
+        }
+        
+        /* 轮播图区域 */
+        .hero-slider {
+            min-height: 100vh;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .slide {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            opacity: 0;
+            transition: opacity 1s ease-in-out;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+            padding: 6rem 2rem 2rem;
+        }
+        
+        .slide.active {
+            opacity: 1;
+        }
+        
+        .slide-bg {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-size: cover;
+            background-position: center;
+            z-index: -2;
+        }
+        
+        .slide-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(135deg, rgba(26, 95, 42, 0.8) 0%, rgba(45, 138, 62, 0.7) 100%);
+            z-index: -1;
+        }
+        
+        .slide-content {
+            max-width: 900px;
+            z-index: 1;
+        }
+        
+        .slide-content h1 {
+            font-size: 4rem;
+            margin-bottom: 1rem;
+            font-weight: 700;
+            letter-spacing: 0.1em;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+        
+        .slide-content .brand-en {
+            font-size: 1.1rem;
+            letter-spacing: 0.3em;
+            margin-bottom: 1.5rem;
+            opacity: 0.9;
+        }
+        
+        .slide-content .tagline {
+            font-size: 1.6rem;
+            margin-bottom: 1.5rem;
+            font-weight: 300;
+            letter-spacing: 0.15em;
+        }
+        
+        .slide-content .subtitle {
+            font-size: 1rem;
+            opacity: 0.9;
+            max-width: 700px;
+            margin: 0 auto 2rem;
+            line-height: 1.8;
+        }
+        
+        .slider-dots {
+            position: absolute;
+            bottom: 40px;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            gap: 12px;
+            z-index: 10;
+        }
+        
+        .dot {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background: rgba(255,255,255,0.4);
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+        
+        .dot.active {
+            background: white;
+            width: 30px;
+            border-radius: 6px;
+        }
+        
+        .slider-arrows {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            padding: 0 30px;
+            z-index: 10;
+        }
+        
+        .arrow {
+            width: 50px;
+            height: 50px;
+            border: 2px solid rgba(255,255,255,0.5);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            transition: all 0.3s;
+            font-size: 1.2rem;
+            color: white;
+            background: rgba(0,0,0,0.2);
+        }
+        
+        .arrow:hover {
+            background: rgba(255,255,255,0.2);
+            border-color: white;
+        }
+        
+        .cta-button {
+            display: inline-block;
+            background: transparent;
+            color: white;
+            padding: 1rem 3rem;
+            border: 2px solid white;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 500;
+            margin-top: 1rem;
+            transition: all 0.3s;
+            letter-spacing: 0.1em;
+        }
+        
+        .cta-button:hover {
+            background: white;
+            color: #1a5f2a;
+        }
+        
+        /* 内容区块通用样式 */
+        .section {
+            padding: 5rem 2rem;
+        }
+        
+        .section-header {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+        
+        .section-header h2 {
+            font-size: 2.2rem;
+            color: #1a5f2a;
+            margin-bottom: 0.5rem;
+            font-weight: 600;
+        }
+        
+        .section-header .en-title {
+            font-size: 0.9rem;
+            color: #999;
+            letter-spacing: 0.2em;
+            text-transform: uppercase;
+        }
+        
+        /* 关于我们 - 参考米来生物 */
+        .about-section {
+            background: #f8f9fa;
+        }
+        
+        .about-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
+        }
+        
+        .about-text h3 {
+            font-size: 1.8rem;
+            color: #1a5f2a;
+            margin-bottom: 1.5rem;
+        }
+        
+        .about-text p {
+            margin-bottom: 1rem;
+            color: #555;
+            line-height: 1.9;
+            font-size: 1rem;
+        }
+        
+        .about-stats {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1.5rem;
+            margin-top: 2rem;
+        }
+        
+        .about-stat {
+            text-align: center;
+            padding: 1.5rem;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 3px 15px rgba(0,0,0,0.06);
+        }
+        
+        .about-stat h4 {
+            font-size: 2rem;
+            color: #1a5f2a;
+            margin-bottom: 0.3rem;
+        }
+        
+        .about-stat p {
+            color: #666;
+            font-size: 0.9rem;
+            margin: 0;
+        }
+        
+        .about-images {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1rem;
+        }
+        
+        .about-images img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+        
+        /* 核心产品 - 参考米来生物 */
+        .products-section {
+            background: white;
+        }
+        
+        .products-container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .product-tabs {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            margin-bottom: 3rem;
+        }
+        
+        .product-tab {
+            padding: 0.8rem 2rem;
+            background: #f0f0f0;
+            border-radius: 30px;
+            cursor: pointer;
+            transition: all 0.3s;
+            font-size: 0.95rem;
+        }
+        
+        .product-tab.active {
+            background: #1a5f2a;
+            color: white;
+        }
+        
+        .products-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 2rem;
+        }
+        
+        .product-card {
+            background: white;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        
+        .product-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 40px rgba(0,0,0,0.12);
+        }
+        
+        .product-image {
+            height: 200px;
+            background: #f8f9fa;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+        }
+        
+        .product-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        
+        .product-info {
+            padding: 1.5rem;
+        }
+        
+        .product-tag {
+            display: inline-block;
+            background: #e8f5e9;
+            color: #1a5f2a;
+            padding: 0.3rem 0.8rem;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            margin-bottom: 0.8rem;
+        }
+        
+        .product-info h3 {
+            color: #1a5f2a;
+            margin-bottom: 0.8rem;
+            font-size: 1.2rem;
+        }
+        
+        .product-info p {
+            color: #666;
+            font-size: 0.9rem;
+            line-height: 1.6;
+        }
+        
+        /* 核心优势 - 参考米来生物 */
+        .advantages-section {
+            background: #f8f9fa;
+        }
+        
+        .advantages-container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .advantages-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+        }
+        
+        .advantage-card {
+            background: white;
+            padding: 2.5rem;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.06);
+            text-align: center;
+        }
+        
+        .advantage-icon {
+            font-size: 3rem;
+            margin-bottom: 1.5rem;
+        }
+        
+        .advantage-card h3 {
+            color: #1a5f2a;
+            margin-bottom: 1rem;
+            font-size: 1.2rem;
+        }
+        
+        .advantage-card p {
+            color: #666;
+            font-size: 0.9rem;
+            line-height: 1.7;
+            margin-bottom: 0.5rem;
+        }
+        
+        /* 仓储物流 */
+        .logistics-section {
+            background: white;
+        }
+        
+        .logistics-container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .logistics-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+        }
+        
+        .logistics-card {
+            background: #f8f9fa;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.06);
+        }
+        
+        .logistics-image {
+            height: 220px;
+            overflow: hidden;
+        }
+        
+        .logistics-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        
+        .logistics-info {
+            padding: 1.5rem;
+        }
+        
+        .logistics-info h3 {
+            color: #1a5f2a;
+            margin-bottom: 0.8rem;
+        }
+        
+        .logistics-info p {
+            color: #666;
+            font-size: 0.95rem;
+        }
+        
+        /* 贸易伙伴 */
+        .partners-section {
+            background: #f8f9fa;
+        }
+        
+        .partners-container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .partners-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 1.5rem;
+        }
+        
+        .partner-card {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 10px;
+            box-shadow: 0 3px 15px rgba(0,0,0,0.06);
+            transition: all 0.3s;
+        }
+        
+        .partner-card:hover {
+            transform: scale(1.02);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+        }
+        
+        .partner-card h4 {
+            color: #1a5f2a;
+            margin-bottom: 0.5rem;
+            font-size: 1rem;
+        }
+        
+        .partner-tag {
+            display: inline-block;
+            background: #e8f5e9;
+            color: #1a5f2a;
+            padding: 0.2rem 0.6rem;
+            border-radius: 15px;
+            font-size: 0.75rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        .partner-card p {
+            color: #888;
+            font-size: 0.85rem;
+        }
+        
+        /* 金融合作伙伴 */
+        .banks-section {
+            background: white;
+        }
+        
+        .banks-container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .banks-grid {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 1.5rem;
+        }
+        
+        .bank-item {
+            background: #f8f9fa;
+            padding: 1rem 2rem;
+            border-radius: 8px;
+            font-weight: 500;
+            color: #555;
+            transition: all 0.3s;
+        }
+        
+        .bank-item:hover {
+            background: #1a5f2a;
+            color: white;
+        }
+        
+        /* 联系我们 */
+        .contact-section {
+            background: linear-gradient(135deg, #1a5f2a 0%, #2d8a3e 100%);
+            color: white;
+        }
+        
+        .contact-container {
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: center;
+        }
+        
+        .contact-section h2 {
+            color: white;
+            margin-bottom: 2rem;
+        }
+        
+        .contact-info {
+            font-size: 1.1rem;
+            line-height: 2.2;
+        }
+        
+        .contact-info strong {
+            font-size: 1.3rem;
+        }
+        
+        /* 页脚 */
+        footer {
+            background: #1a1a1a;
+            color: white;
+            padding: 3rem 2rem 2rem;
+        }
+        
+        .footer-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 3rem;
+        }
+        
+        .footer-section h4 {
+            margin-bottom: 1rem;
+            color: #5bc96e;
+            font-size: 1.1rem;
+        }
+        
+        .footer-section p, .footer-section a {
+            color: #aaa;
+            text-decoration: none;
+            line-height: 1.8;
+            font-size: 0.9rem;
+        }
+        
+        .footer-bottom {
+            text-align: center;
+            margin-top: 3rem;
+            padding-top: 2rem;
+            border-top: 1px solid #333;
+            color: #666;
+            font-size: 0.85rem;
+        }
+        
+        /* 响应式 */
+        @media (max-width: 1024px) {
+            .products-grid,
+            .partners-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            
+            .advantages-grid,
+            .logistics-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .hero-content h1 {
+                font-size: 2.5rem;
+            }
+            
+            .hero-content .tagline {
+                font-size: 1.2rem;
+            }
+            
+            .nav-links {
+                display: none;
+            }
+            
+            .about-container {
+                grid-template-columns: 1fr;
+            }
+            
+            .products-grid,
+            .advantages-grid,
+            .logistics-grid,
+            .partners-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .about-stats {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            
+            .footer-container {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
 </head>
 <body>
-
-  <header>
-    <img src="images/factory-bg.jpg" alt="现代化工厂" style="position:absolute; top:0; left:0; right:0; bottom:0; width:100%; height:100%; object-fit:cover; opacity:0.4; z-index:0;">
-    <div style="position:absolute; top:0; left:0; right:0; bottom:0; background:linear-gradient(135deg, rgba(30,64,175,0.75) 0%, rgba(59,130,246,0.7) 50%, rgba(29,78,216,0.75) 100%); z-index:0;"></div>
-    <div class="content">
-      <h1>湖北悦澄农业有限公司</h1>
-      <p>成立于2023年 · 专注蛋粉系列深加工贸易 · 近半年每月数百吨规模 · 现代化生产车间 · 多银行授信</p>
-    </div>
-  </header>
-
-  <nav>
-    <ul>
-      <li><a href="#about">关于我们</a></li>
-      <li><a href="#products">贸易产品</a></li>
-      <li><a href="#process">生产流程</a></li>
-      <li><a href="#partners">合作伙伴</a></li>
-      <li><a href="#certificates">资质证书</a></li>
-      <li><a href="#strength">核心优势</a></li>
-      <li><a href="#contact">联系我们</a></li>
-    </ul>
-  </nav>
-
-  <section id="about" class="about">
-    <h2>关于悦澄</h2>
-    <div class="about-grid" style="display:grid; grid-template-columns:repeat(4, 1fr); gap:24px; margin-bottom:40px;">
-      <div class="card" style="min-height:380px;">
-        <h3>🏢 公司基本信息</h3>
-        <p style="text-align:left; font-size:0.95rem;">
-          <strong>成立时间：</strong>2023年8月16日<br>
-          <strong>注册资本：</strong>500万元<br>
-          <strong>实收资本：</strong>50万元<br>
-          <strong>法定代表人：</strong>陈思思<br>
-          <strong>企业性质：</strong>私人绝对控股<br>
-          <strong>信用代码：</strong>91420107MACXCART07<br>
-          <strong>开户银行：</strong>交通银行武汉硚口支行
-        </p>
-      </div>
-      <div class="card" style="min-height:380px;">
-        <h3>📍 注册地址</h3>
-        <p style="text-align:left; font-size:0.95rem;">
-          湖北省武汉市青山区<br>
-          白玉山街道白玉山街<br>
-          21号公路旁188号<br>
-          二层010号
-        </p>
-        <h3 style="margin-top:20px;">📋 经营范围</h3>
-        <p style="text-align:left; font-size:0.9rem;">
-          农副产品销售、初级农产品收购、食用农产品批发零售等
-        </p>
-      </div>
-      <div class="card" style="min-height:380px;">
-        <h3>🎯 核心业务</h3>
-        <p style="text-align:left; font-size:0.95rem;">
-          <strong>主营产品：</strong><br>
-          • 全蛋粉<br>
-          • 蛋白粉<br>
-          • 蛋黄粉<br><br>
-          <strong>业务模式：</strong><br>
-          蛋制品深加工贸易，月贸易量数百吨级
-        </p>
-      </div>
-      <div class="card" style="min-height:380px;">
-        <h3>🏆 企业资质</h3>
-        <p style="text-align:left; font-size:0.95rem;">
-          <strong>软件著作权：</strong><br>
-          • 初级农产品收购处理软件<br>
-          • 农业技术信息咨询平台<br>
-          • 农产品生产销售管理系统<br>
-          • 农副产品购销数据管理系统<br><br>
-          <strong>银行授信：</strong>多家银行长期合作
-        </p>
-      </div>
-    </div>
-    <style>
-      @media (max-width:1200px) { .about-grid { grid-template-columns:repeat(2, 1fr) !important; } }
-      @media (max-width:768px) { .about-grid { grid-template-columns:1fr !important; } }
-    </style>
-    <p style="font-size:1.2rem; max-width:900px; margin:0 auto 24px; text-align:center;">
-      湖北悦澄农业有限公司是一家专注于<strong>蛋制品深加工与贸易</strong>的现代化企业，主营蛋黄粉、蛋白粉、全蛋粉等产品的加工及销售。
-    </p>
-    <p style="font-size:1.1rem; max-width:900px; margin:0 auto; text-align:center; color:#4b5563;">
-      凭借清晰的上下游网络、规范的经营模式和多家银行的长期授信，我们为合作伙伴提供安全、高效、可靠的解决方案。
-    </p>
-  </section>
-
-  <section id="products" style="background: linear-gradient(to bottom, #f0f7ff, #dbeafe);">
-    <h2>贸易产品与规模</h2>
-    <p style="font-size:1.3rem; text-align:center; max-width:900px; margin:0 auto 48px;">
-      核心贸易产品为<strong>全蛋粉、蛋白粉、蛋黄粉</strong>，品质稳定、应用广泛。<br>
-      <strong>每月贸易量数百吨级</strong>，供应链高效，业务持续稳健增长。
-    </p>
-    <div class="product-grid">
-      <div class="card">
-        <img src="images/eggs-basket.jpg" alt="全蛋粉产品" loading="lazy">
-        <h3>全蛋粉</h3>
-        <p>优质鲜蛋全成分加工，营养均衡，适用于烘焙、食品生产。</p>
-      </div>
-      <div class="card">
-        <img src="images/protein-powder.jpg" alt="蛋白粉产品" loading="lazy">
-        <h3>蛋白粉</h3>
-        <p>高纯度蛋清蛋白，蛋白质含量高，适合营养补充与加工。</p>
-      </div>
-      <div class="card">
-        <img src="images/egg-powder.jpg" alt="蛋黄粉产品" loading="lazy">
-        <h3>蛋黄粉</h3>
-        <p>浓郁蛋黄金黄色泽，风味丰富，用于酱料、烘焙等领域。</p>
-      </div>
-      <div class="card">
-        <img src="images/trade-scale.jpg" alt="贸易规模" loading="lazy">
-        <h3>贸易规模</h3>
-        <p>近半年每月数百吨级贸易量，供应链高效，业务持续稳健增长。</p>
-      </div>
-    </div>
-
-    <div style="background:white; border-radius:16px; padding:40px; margin-top:48px; border:1px solid #bfdbfe;">
-      <h3 style="color:var(--primary-dark); text-align:center; margin-bottom:32px;">业务模式</h3>
-      <div style="display:grid; grid-template-columns:repeat(auto-fit,minmax(250px,1fr)); gap:24px;">
-        <div style="text-align:center; padding:20px;">
-          <div style="font-size:2.5rem; margin-bottom:12px;">🔗</div>
-          <h4 style="color:var(--primary-dark); margin-bottom:8px;">订单匹配模式</h4>
-          <p style="font-size:0.95rem; color:#4b5563;">预先匹配上下游客户需求，以相同标的分别与供应商、客户签订购销合同</p>
+    <!-- 导航栏 -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <span>🌾</span>
+                <div class="logo-text">
+                    <div class="logo-main">聚俊缘科技</div>
+                    <div class="logo-sub">湖北聚俊缘科技有限公司</div>
+                </div>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home">首页</a></li>
+                <li><a href="#about">关于我们</a></li>
+                <li><a href="#products">核心产品</a></li>
+                <li><a href="#advantages">核心优势</a></li>
+                <li><a href="#logistics">仓储物流</a></li>
+                <li><a href="#partners">合作伙伴</a></li>
+                <li><a href="#contact">联系我们</a></li>
+            </ul>
         </div>
-        <div style="text-align:center; padding:20px;">
-          <div style="font-size:2.5rem; margin-bottom:12px;">💰</div>
-          <h4 style="color:var(--primary-dark); margin-bottom:8px;">差价盈利模式</h4>
-          <p style="font-size:0.95rem; color:#4b5563;">按采购价格预留合理差价确定销售价格，最终价格由买卖双方协商确定</p>
+    </nav>
+
+    <!-- 轮播图区域 -->
+    <section class="hero-slider" id="home">
+        <!-- 幻灯片1 -->
+        <div class="slide active">
+            <div class="slide-bg" style="background-image: url('./images/slide1.png')"></div>
+            <div class="slide-overlay"></div>
+            <div class="slide-content">
+                <p class="brand-en">JUJUNYUAN TECHNOLOGY</p>
+                <h1>聚俊缘科技</h1>
+                <p class="tagline">全球供应链 · 连接世界</p>
+                <p class="subtitle">构建覆盖全球的农产品供应链网络，实现从产地到餐桌的高效配送，年销售金额突破1.41亿元</p>
+                <a href="#about" class="cta-button">了解更多</a>
+            </div>
         </div>
-        <div style="text-align:center; padding:20px;">
-          <div style="font-size:2.5rem; margin-bottom:12px;">🚚</div>
-          <h4 style="color:var(--primary-dark); margin-bottom:8px;">直发配送模式</h4>
-          <p style="font-size:0.95rem; color:#4b5563;">供应商根据订单直接将货物运输到客户指定地点，高效便捷</p>
+
+        <!-- 幻灯片2 -->
+        <div class="slide">
+            <div class="slide-bg" style="background-image: url('./images/slide2.png')"></div>
+            <div class="slide-overlay"></div>
+            <div class="slide-content">
+                <p class="brand-en">JUJUNYUAN TECHNOLOGY</p>
+                <h1>聚俊缘科技</h1>
+                <p class="tagline">智能物流 · 科技赋能</p>
+                <p class="subtitle">现代化智能仓储配送中心，自动化分拣系统，覆盖全国六大区域的物流配送网络</p>
+                <a href="#logistics" class="cta-button">了解详情</a>
+            </div>
         </div>
-      </div>
-      <div style="margin-top:32px; padding:20px; background:#f0f7ff; border-radius:12px;">
-        <h4 style="color:var(--primary-dark); margin-bottom:12px;">结算方式</h4>
-        <p style="font-size:1rem; color:#374151;">
-          与上游签订年度采购合同，采用<strong>先款后货</strong>方式，款到后<strong>30天内</strong>根据具体订单要求交货。
-          通过电话、微信、邮件等方式确认产品标准及数量，供应商按计划配备货物。
-        </p>
-      </div>
-    </div>
-  </section>
 
-  <section id="process" style="background:#f0f7ff;">
-    <h2>蛋粉生产流程</h2>
-    <p style="font-size:1.3rem; text-align:center; max-width:900px; margin:0 auto 32px;">
-      我们采用行业主流的<strong>喷雾干燥法</strong>生产全蛋粉、蛋白粉、蛋黄粉，整个过程在现代化洁净车间完成。<br>
-      严格遵守食品安全标准，从鲜蛋接收到成品包装全程自动化控制，确保产品质量稳定。
-    </p>
-
-    <div class="process-steps">
-      <ol>
-        <li><strong>鲜蛋接收与清洗</strong>：优质鲜蛋进厂后清洗、消毒、照蛋，确保原料无问题。</li>
-        <li><strong>打蛋与分离</strong>：自动化打蛋机破壳，分离蛋清/蛋黄（全蛋粉直接混合）。</li>
-        <li><strong>过滤与冷却</strong>：去除杂质，低温冷却储存，防止细菌生长。</li>
-        <li><strong>巴氏杀菌</strong>：低温杀菌保留营养，消灭潜在病原体。</li>
-        <li><strong>喷雾干燥</strong>：液态蛋液高压雾化，热风瞬间干燥成粉末（核心步骤）。</li>
-        <li><strong>冷却、筛分与包装</strong>：干燥后冷却、筛粉，真空/充氮包装防潮。</li>
-        <li><strong>成品检测与储存</strong>：严格检测水分、蛋白质、微生物，合格后入库。</li>
-      </ol>
-    </div>
-
-    <div class="flowchart">
-      <h3 style="text-align:center; margin-bottom:16px; color:var(--primary-dark);">生产工艺流程示意图</h3>
-      <div style="background:white; border-radius:12px; padding:40px; border:1px solid #bfdbfe; text-align:center;">
-        <div style="display:flex; flex-wrap:wrap; justify-content:center; align-items:center; gap:16px; font-size:1rem;">
-          <div style="background:var(--primary); color:white; padding:16px 24px; border-radius:8px; font-weight:bold;">鲜蛋接收</div>
-          <span style="font-size:1.5rem; color:var(--primary);">→</span>
-          <div style="background:var(--primary); color:white; padding:16px 24px; border-radius:8px; font-weight:bold;">清洗消毒</div>
-          <span style="font-size:1.5rem; color:var(--primary);">→</span>
-          <div style="background:var(--primary); color:white; padding:16px 24px; border-radius:8px; font-weight:bold;">打蛋分离</div>
-          <span style="font-size:1.5rem; color:var(--primary);">→</span>
-          <div style="background:var(--primary); color:white; padding:16px 24px; border-radius:8px; font-weight:bold;">过滤冷却</div>
-          <span style="font-size:1.5rem; color:var(--primary);">→</span>
-          <div style="background:var(--primary); color:white; padding:16px 24px; border-radius:8px; font-weight:bold;">巴氏杀菌</div>
-          <span style="font-size:1.5rem; color:var(--primary);">→</span>
-          <div style="background:var(--primary-dark); color:white; padding:16px 24px; border-radius:8px; font-weight:bold;">喷雾干燥</div>
-          <span style="font-size:1.5rem; color:var(--primary);">→</span>
-          <div style="background:var(--primary); color:white; padding:16px 24px; border-radius:8px; font-weight:bold;">冷却筛分</div>
-          <span style="font-size:1.5rem; color:var(--primary);">→</span>
-          <div style="background:var(--accent); color:white; padding:16px 24px; border-radius:8px; font-weight:bold;">成品包装</div>
+        <!-- 幻灯片3 -->
+        <div class="slide">
+            <div class="slide-bg" style="background-image: url('./images/slide3.png')"></div>
+            <div class="slide-overlay"></div>
+            <div class="slide-content">
+                <p class="brand-en">JUJUNYUAN TECHNOLOGY</p>
+                <h1>聚俊缘科技</h1>
+                <p class="tagline">智慧养殖 · 品质保障</p>
+                <p class="subtitle">现代化智能养殖基地，太阳能绿色能源，科学饲养管理，产出优质蛋品</p>
+                <a href="#products" class="cta-button">查看产品</a>
+            </div>
         </div>
-      </div>
-    </div>
+        
+        <!-- 轮播箭头 -->
+        <div class="slider-arrows">
+            <div class="arrow" onclick="changeSlide(-1)">❮</div>
+            <div class="arrow" onclick="changeSlide(1)">❯</div>
+        </div>
+        
+        <!-- 轮播指示点 -->
+        <div class="slider-dots">
+            <div class="dot active" onclick="goToSlide(0)"></div>
+            <div class="dot" onclick="goToSlide(1)"></div>
+            <div class="dot" onclick="goToSlide(2)"></div>
+        </div>
+    </section>
+    
+    <script>
+        let currentSlide = 0;
+        const slides = document.querySelectorAll('.slide');
+        const dots = document.querySelectorAll('.dot');
+        const totalSlides = slides.length;
+        
+        function showSlide(index) {
+            slides.forEach((slide, i) => {
+                slide.classList.remove('active');
+                dots[i].classList.remove('active');
+            });
+            slides[index].classList.add('active');
+            dots[index].classList.add('active');
+        }
+        
+        function changeSlide(direction) {
+            currentSlide += direction;
+            if (currentSlide >= totalSlides) currentSlide = 0;
+            if (currentSlide < 0) currentSlide = totalSlides - 1;
+            showSlide(currentSlide);
+        }
+        
+        function goToSlide(index) {
+            currentSlide = index;
+            showSlide(currentSlide);
+        }
+        
+        // 自动轮播
+        setInterval(() => {
+            changeSlide(1);
+        }, 5000);
+    </script>
 
-    <h3 style="text-align:center; margin:48px 0 24px; color:var(--primary-dark);">现代化蛋粉生产车间实景</h3>
-    <div class="workshop-grid">
-      <div class="card">
-        <img src="images/spray-dryer.jpg" alt="喷雾干燥生产线车间" loading="lazy">
-        <h3>喷雾干燥生产线车间</h3>
-        <p>大型不锈钢干燥塔与多条管道系统，配备热风循环和收集装置，实现蛋液瞬间干燥成粉。</p>
-      </div>
-      <div class="card">
-        <img src="images/egg-breaking.webp" alt="打蛋分离自动化生产线" loading="lazy">
-        <h3>打蛋分离自动化生产线</h3>
-        <p>圆形自动化破蛋分离机，多工位同时操作鲜蛋破壳与蛋液分离，洁净车间环境。</p>
-      </div>
-      <div class="card">
-        <img src="images/storage-tanks.jpg" alt="不锈钢储罐与管道区" loading="lazy">
-        <h3>巴氏杀菌与储罐区</h3>
-        <p>食品级不锈钢储罐群与连接管道系统，用于蛋液暂存、杀菌和输送，卫生标准高。</p>
-      </div>
-      <div class="card">
-        <img src="images/packaging.webp" alt="成品包装输送线" loading="lazy">
-        <h3>成品包装输送线</h3>
-        <p>自动化灌装与输送带系统，多漏斗设计，实现蛋粉高效填充与密封包装。</p>
-      </div>
-    </div>
-  </section>
+    <!-- 关于我们 -->
+    <section class="section about-section" id="about">
+        <div class="section-header">
+            <h2>关于聚俊缘</h2>
+            <p class="en-title">About Jujunyuan</p>
+        </div>
+        <div class="about-container">
+            <div class="about-text">
+                <h3>企业简介</h3>
+                <p>湖北聚俊缘科技有限公司成立于2023年8月，是一家专注于农业产业化发展的综合性企业。公司以科技创新为驱动，以金融服务为支撑，构建了覆盖农业生产、加工、贸易、物流的全产业链服务体系。</p>
+                <p>公司与12家贸易伙伴深度合作，年销售金额突破1.41亿元，业务涵盖蛋品生产、粮食贸易、农业科技、供应链金融等多个领域。</p>
+                <p>公司秉承"诚信、创新、共赢"的经营理念，与15家银行建立了深度合作关系，税务信用优良，为企业持续健康发展提供坚实保障。</p>
+                <div class="about-stats">
+                    <div class="about-stat">
+                        <h4>1.41亿</h4>
+                        <p>年销售金额</p>
+                    </div>
+                    <div class="about-stat">
+                        <h4>21家</h4>
+                        <p>上下游客户</p>
+                    </div>
+                    <div class="about-stat">
+                        <h4>15+</h4>
+                        <p>合作银行</p>
+                    </div>
+                </div>
+            </div>
+            <div class="about-images">
+                <img src="./images/farm-1.png" alt="现代化养殖场">
+                <img src="./images/farm-2.png" alt="生态散养基地">
+            </div>
+        </div>
+    </section>
 
-  <section id="partners" style="background:#f0f7ff;">
-    <h2>合作伙伴</h2>
-    <div class="partners-grid" style="display:grid; grid-template-columns:repeat(4, 1fr); gap:24px; max-width:1200px; margin:0 auto;">
-      <div class="card" style="min-height:380px; text-align:left;">
-        <h3 style="color:var(--primary-dark); text-align:center; margin-bottom:20px;">📦 供应商一</h3>
-        <p style="font-size:0.95rem;">
-          <strong>公司名称：</strong><br>
-          广州合成农产品供应链有限公司<br><br>
-          <strong>采购品种：</strong><br>
-          蛋黄粉、蛋白粉、全蛋粉<br><br>
-          <strong>合作模式：</strong><br>
-          长期战略合作，年度采购合同
-        </p>
-      </div>
-      <div class="card" style="min-height:380px; text-align:left;">
-        <h3 style="color:var(--primary-dark); text-align:center; margin-bottom:20px;">📦 供应商二</h3>
-        <p style="font-size:0.95rem;">
-          <strong>公司名称：</strong><br>
-          湖北惠宇商贸有限公司<br><br>
-          <strong>采购品种：</strong><br>
-          蛋黄粉、蛋白粉、全蛋粉<br><br>
-          <strong>合作模式：</strong><br>
-          本地优质供应商，快速响应
-        </p>
-      </div>
-      <div class="card" style="min-height:380px; text-align:left;">
-        <h3 style="color:var(--primary-dark); text-align:center; margin-bottom:20px;">🤝 主要客户</h3>
-        <p style="font-size:0.95rem;">
-          <strong>公司名称：</strong><br>
-          湖北予佳科技有限公司<br><br>
-          <strong>销售品种：</strong><br>
-          蛋黄粉、蛋白粉、全蛋粉<br><br>
-          <strong>客户类型：</strong><br>
-          食品加工企业，长期合作
-        </p>
-      </div>
-      <div class="card" style="min-height:380px; text-align:left;">
-        <h3 style="color:var(--primary-dark); text-align:center; margin-bottom:20px;">🏦 合作银行</h3>
-        <p style="font-size:0.95rem;">
-          <strong>授信银行：</strong><br>
-          • 广发银行<br>
-          • 浦发银行<br>
-          • 邮储银行<br>
-          • 农业银行<br>
-          • 工商银行<br>
-          • 恒丰银行<br>
-          • 浙商银行<br>
-          • 交通银行
-        </p>
-      </div>
-    </div>
-    <style>
-      @media (max-width:1200px) { .partners-grid { grid-template-columns:repeat(2, 1fr) !important; } }
-      @media (max-width:768px) { .partners-grid { grid-template-columns:1fr !important; } }
-    </style>
-  </section>
+    <!-- 核心产品 -->
+    <section class="section products-section" id="products">
+        <div class="products-container">
+            <div class="section-header">
+                <h2>核心产品</h2>
+                <p class="en-title">Core Products</p>
+            </div>
+            <div class="products-grid">
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1506976785307-8732e854ad03?w=600&h=400&fit=crop" alt="新鲜鸡蛋">
+                    </div>
+                    <div class="product-info">
+                        <h3>新鲜鸡蛋</h3>
+                        <p>精选优质蛋鸡，科学饲养管理，产出营养丰富、口感鲜美的鲜鸡蛋，满足家庭日常消费需求。</p>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="./images/egg-powder.png" alt="全蛋粉">
+                    </div>
+                    <div class="product-info">
+                        <h3>全蛋粉</h3>
+                        <p>采用先进喷雾干燥技术，保留鸡蛋全部营养成分，便于储存运输，广泛应用于食品加工行业。</p>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="./images/yolk-powder.png" alt="蛋黄粉">
+                    </div>
+                    <div class="product-info">
+                        <h3>蛋黄粉</h3>
+                        <p>提取优质蛋黄精制而成，富含卵磷脂和蛋白质，是烘焙、调味、营养强化等领域的理想原料。</p>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="./images/protein-powder.png" alt="蛋白粉">
+                    </div>
+                    <div class="product-info">
+                        <h3>蛋白粉</h3>
+                        <p>高纯度蛋清蛋白制品，具有优良的打发性和凝胶性，广泛应用于烘焙、糖果、医药等行业。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-  <section id="certificates" style="background: linear-gradient(to bottom, #f0f7ff, #dbeafe);">
-    <h2>资质证书</h2>
-    <p style="font-size:1.2rem; text-align:center; max-width:800px; margin:0 auto 48px; color:#4b5563;">
-      公司拥有多项软件著作权，在农产品信息化管理领域具备专业技术实力
-    </p>
-    <div style="display:grid; grid-template-columns:repeat(4, 1fr); gap:32px; max-width:1200px; margin:0 auto;">
-    <style>
-      @media (max-width:1200px) { #certificates > div { grid-template-columns:repeat(2, 1fr) !important; } }
-      @media (max-width:768px) { #certificates > div { grid-template-columns:1fr !important; } }
-    </style>
-      <div class="card" style="padding:20px;">
-        <img src="images/certificate-1.jpg" alt="初级农产品收购处理软件著作权" style="width:100%; height:auto; border-radius:8px; border:1px solid #e5e7eb; cursor:pointer;" onclick="openModal(this.src)">
-        <h3 style="font-size:1.1rem; margin-top:16px;">初级农产品收购处理软件 V1.0</h3>
-        <p style="font-size:0.9rem; color:#6b7280;">计算机软件著作权登记证书</p>
-      </div>
-      <div class="card" style="padding:20px;">
-        <img src="images/certificate-2.jpg" alt="农业技术信息咨询平台著作权" style="width:100%; height:auto; border-radius:8px; border:1px solid #e5e7eb; cursor:pointer;" onclick="openModal(this.src)">
-        <h3 style="font-size:1.1rem; margin-top:16px;">农业技术信息咨询平台 V1.0</h3>
-        <p style="font-size:0.9rem; color:#6b7280;">计算机软件著作权登记证书</p>
-      </div>
-      <div class="card" style="padding:20px;">
-        <img src="images/certificate-3.jpg" alt="农产品生产销售管理系统著作权" style="width:100%; height:auto; border-radius:8px; border:1px solid #e5e7eb; cursor:pointer;" onclick="openModal(this.src)">
-        <h3 style="font-size:1.1rem; margin-top:16px;">农产品生产销售管理系统 V1.0</h3>
-        <p style="font-size:0.9rem; color:#6b7280;">计算机软件著作权登记证书</p>
-      </div>
-      <div class="card" style="padding:20px;">
-        <img src="images/certificate-4.jpg" alt="农副产品购销数据管理系统著作权" style="width:100%; height:auto; border-radius:8px; border:1px solid #e5e7eb; cursor:pointer;" onclick="openModal(this.src)">
-        <h3 style="font-size:1.1rem; margin-top:16px;">农副产品购销数据管理系统 V1.0</h3>
-        <p style="font-size:0.9rem; color:#6b7280;">计算机软件著作权登记证书</p>
-      </div>
-    </div>
-  </section>
+    <!-- 核心优势 -->
+    <section class="section advantages-section" id="advantages">
+        <div class="advantages-container">
+            <div class="section-header">
+                <h2>核心优势</h2>
+                <p class="en-title">Core Competences</p>
+            </div>
+            <div class="advantages-grid">
+                <div class="advantage-card">
+                    <div class="advantage-icon">🏭</div>
+                    <h3>全产业链布局</h3>
+                    <p>上游：现代化养殖基地</p>
+                    <p>中游：先进蛋粉加工产线</p>
+                    <p>下游：全国销售网络</p>
+                </div>
+                <div class="advantage-card">
+                    <div class="advantage-icon">💰</div>
+                    <h3>供应链金融支持</h3>
+                    <p>15家银行战略合作</p>
+                    <p>银行承兑汇票服务</p>
+                    <p>资金周转高效便捷</p>
+                </div>
+                <div class="advantage-card">
+                    <div class="advantage-icon">🤝</div>
+                    <h3>优质客户资源</h3>
+                    <p>年销售1.41亿元</p>
+                    <p>最大客户6239万元</p>
+                    <p>客户遍布全国各地</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-  <section id="strength">
-    <h2>核心优势</h2>
-    <div class="strength-grid">
-      <div class="card">
-        <img src="images/handshake.jpg" alt="商务签约握手合作" loading="lazy">
-        <h3>强劲金融实力</h3>
-        <p>与多家银行建立长期授信合作关系，信用记录优良，为大额贸易提供充足资金保障。</p>
-      </div>
-      <div class="card">
-        <img src="images/warehouse.jpg" alt="完整供应链生态" loading="lazy">
-        <h3>完整供应链生态</h3>
-        <p>上下游网络稳定，采购、销售、仓储、物流一体化，确保交付及时与品质可靠。</p>
-      </div>
-      <div class="card">
-        <img src="images/finance.jpg" alt="合规透明经营" loading="lazy">
-        <h3>合规透明经营</h3>
-        <p>体系规范、征信良好，经营全程可追溯，赢得合作伙伴高度信赖。</p>
-      </div>
-      <div class="card">
-        <img src="images/team.jpg" alt="专业高效团队" loading="lazy">
-        <h3>专业高效团队</h3>
-        <p>实控人陈思思在农产品贸易领域深耕多年，团队熟悉农业贸易与供应链金融。</p>
-      </div>
-    </div>
+    <!-- 仓储物流 -->
+    <section class="section logistics-section" id="logistics">
+        <div class="logistics-container">
+            <div class="section-header">
+                <h2>仓储物流</h2>
+                <p class="en-title">Logistics & Storage</p>
+            </div>
+            <div class="logistics-grid">
+                <div class="logistics-card">
+                    <div class="logistics-image">
+                        <img src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=800&h=500&fit=crop" alt="现代化仓库">
+                    </div>
+                    <div class="logistics-info">
+                        <h3>现代化仓储</h3>
+                        <p>配备恒温恒湿系统的现代化仓库，确保产品在最佳环境下储存。</p>
+                    </div>
+                </div>
+                <div class="logistics-card">
+                    <div class="logistics-image">
+                        <img src="https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?w=800&h=500&fit=crop" alt="冷链运输">
+                    </div>
+                    <div class="logistics-info">
+                        <h3>冷链运输</h3>
+                        <p>专业冷链物流车队，全程温控运输，确保产品品质如一。</p>
+                    </div>
+                </div>
+                <div class="logistics-card">
+                    <div class="logistics-image">
+                        <img src="./images/logistics-network.png" alt="配送网络">
+                    </div>
+                    <div class="logistics-info">
+                        <h3>配送网络</h3>
+                        <p>覆盖全国六大区域的配送网络，高效响应客户需求。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    <div style="text-align:center; margin-top:60px;">
-      <h3 style="color:var(--primary-dark);">部分合作银行</h3>
-      <div class="banks">
-        <span class="bank-logo">广发银行</span>
-        <span class="bank-logo">浦发银行</span>
-        <span class="bank-logo">邮储银行</span>
-        <span class="bank-logo">农业银行</span>
-        <span class="bank-logo">工商银行</span>
-        <span class="bank-logo">恒丰银行</span>
-        <span class="bank-logo">浙商银行</span>
-        <span class="bank-logo">交通银行</span>
-      </div>
-    </div>
-  </section>
+    <!-- 贸易伙伴 -->
+    <section class="section partners-section" id="partners">
+        <div class="partners-container">
+            <div class="section-header">
+                <h2>贸易伙伴</h2>
+                <p class="en-title">Partners</p>
+            </div>
+            <div class="partners-grid">
+                <div class="partner-card">
+                    <h4>湖北宸宇盎农业有限公司</h4>
+                    <span class="partner-tag">核心供应商</span>
+                </div>
+                <div class="partner-card">
+                    <h4>仙桃硒格源生态农业科技有限公司</h4>
+                    <span class="partner-tag">品牌供应商</span>
+                </div>
+                <div class="partner-card">
+                    <h4>武汉瑞通盛贸易有限公司</h4>
+                    <span class="partner-tag">贸易伙伴</span>
+                </div>
+                <div class="partner-card">
+                    <h4>米来农业科技发展（武汉）有限公司</h4>
+                    <span class="partner-tag">科技农业</span>
+                </div>
+                <div class="partner-card">
+                    <h4>开远市粮油购销有限公司</h4>
+                    <span class="partner-tag">粮油供应</span>
+                </div>
+                <div class="partner-card">
+                    <h4>湖北康利农生物科技有限公司</h4>
+                    <span class="partner-tag">生物科技</span>
+                </div>
+                <div class="partner-card">
+                    <h4>湖北合本缘农业有限公司</h4>
+                    <span class="partner-tag">农业贸易</span>
+                </div>
+                <div class="partner-card">
+                    <h4>湖北悦澄农业有限公司</h4>
+                    <span class="partner-tag">农业综合</span>
+                </div>
+            </div>
+        </div>
+    </section>
 
-  <footer id="contact">
-    <h2 style="color:white; margin-bottom:32px;">联系我们</h2>
-    <div class="contact-info">
-      <p><strong>公司名称：</strong> 湖北悦澄农业有限公司</p>
-      <p><strong>法人代表：</strong> 陈思思</p>
-      <p><strong>联系电话：</strong> 131-6336-0663</p>
-      <p><strong>电子邮箱：</strong> 4815139@qq.com</p>
-      <p><strong>注册地址：</strong> 湖北省武汉市青山区白玉山街道白玉山街21号公路旁188号二层010号</p>
-      <p><strong>开户银行：</strong> 交通银行股份有限公司武汉硚口支行</p>
-      <p style="margin-top:40px; font-size:1.2rem;">欢迎合作，共创蛋制品贸易新机遇！</p>
-    </div>
-    <p style="margin-top:60px; opacity:0.9;">© 2023-2026 湖北悦澄农业有限公司 版权所有 | 统一社会信用代码：91420107MACXCART07</p>
-  </footer>
+    <!-- 金融合作伙伴 -->
+    <section class="section banks-section">
+        <div class="banks-container">
+            <div class="section-header">
+                <h2>金融合作伙伴</h2>
+                <p class="en-title">Financial Partners</p>
+            </div>
+            <div class="banks-grid">
+                <div class="bank-item">交通银行</div>
+                <div class="bank-item">浙商银行</div>
+                <div class="bank-item">兴业银行</div>
+                <div class="bank-item">华夏银行</div>
+                <div class="bank-item">浦发银行</div>
+                <div class="bank-item">恒丰银行</div>
+                <div class="bank-item">邮政储蓄</div>
+                <div class="bank-item">中信银行</div>
+                <div class="bank-item">广发银行</div>
+                <div class="bank-item">工商银行</div>
+                <div class="bank-item">招商银行</div>
+                <div class="bank-item">民生银行</div>
+                <div class="bank-item">汉口银行</div>
+                <div class="bank-item">南洋银行</div>
+                <div class="bank-item">渤海银行</div>
+            </div>
+        </div>
+    </section>
 
-  <div id="imageModal" class="modal" onclick="closeModal()">
-    <span class="modal-close">&times;</span>
-    <img id="modalImg" src="" alt="证书大图">
-  </div>
+    <!-- 联系我们 -->
+    <section class="section contact-section" id="contact">
+        <div class="contact-container">
+            <h2>联系我们</h2>
+            <div class="contact-info">
+                <p><strong>湖北聚俊缘科技有限公司</strong></p>
+                <p>总经理：蒋巍</p>
+                <p>电话：15997401148</p>
+                <p>地址：武汉市江汉区南国中心T1写字楼2503</p>
+            </div>
+        </div>
+    </section>
 
-  <script>
-    function openModal(src) {
-      document.getElementById('modalImg').src = src;
-      document.getElementById('imageModal').style.display = 'flex';
-      document.body.style.overflow = 'hidden';
-    }
-    function closeModal() {
-      document.getElementById('imageModal').style.display = 'none';
-      document.body.style.overflow = 'auto';
-    }
-    document.addEventListener('keydown', function(e) {
-      if (e.key === 'Escape') closeModal();
-    });
-  </script>
-
+    <!-- 页脚 -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <h4>关于我们</h4>
+                <p>湖北聚俊缘科技有限公司是一家专注于农业产业化发展的综合性企业，致力于打造中国领先的现代农业产业平台。</p>
+            </div>
+            <div class="footer-section">
+                <h4>产品中心</h4>
+                <p>新鲜鸡蛋<br>全蛋粉<br>蛋黄粉<br>蛋白粉</p>
+            </div>
+            <div class="footer-section">
+                <h4>联系方式</h4>
+                <p>总经理：蒋巍<br>电话：15997401148<br>地址：武汉市江汉区南国中心T1写字楼2503</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 湖北聚俊缘科技有限公司 版权所有</p>
+        </div>
+    </footer>
 </body>
 </html>
